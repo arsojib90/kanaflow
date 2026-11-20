@@ -2,10 +2,8 @@ import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { createClient } from '@supabase/supabase-js';
 import {
   LayoutDashboard,
-  BookOpen,
   RotateCcw,
   CheckCircle2,
-  XCircle,
   Settings,
   Shuffle,
   ChevronLeft,
@@ -21,10 +19,7 @@ import {
   Sparkles,
   Check,
   X,
-  HelpCircle,
   Flame,
-  Award,
-  Layers,
 } from 'lucide-react';
 
 // ============================================================================
@@ -608,19 +603,19 @@ export default function App() {
     { id: 'settings', label: 'Settings', icon: <Settings className="w-5 h-5" /> },
   ];
 
-  const rowGroups = [
-    { id: 'all', label: 'All Rows' },
-    { id: 'vowels', label: 'A-Row (Vowels)' },
-    { id: 'k-row', label: 'K-Row' },
-    { id: 's-row', label: 'S-Row' },
-    { id: 't-row', label: 'T-Row' },
-    { id: 'n-row', label: 'N-Row' },
-    { id: 'h-row', label: 'H-Row' },
-    { id: 'm-row', label: 'M-Row' },
-    { id: 'y-row', label: 'Y-Row' },
-    { id: 'r-row', label: 'R-Row' },
-    { id: 'w-row', label: 'W-Row & N' },
-  ];
+  // const rowGroups = [
+  //   { id: 'all', label: 'All Rows' },
+  //   { id: 'vowels', label: 'A-Row (Vowels)' },
+  //   { id: 'k-row', label: 'K-Row' },
+  //   { id: 's-row', label: 'S-Row' },
+  //   { id: 't-row', label: 'T-Row' },
+  //   { id: 'n-row', label: 'N-Row' },
+  //   { id: 'h-row', label: 'H-Row' },
+  //   { id: 'm-row', label: 'M-Row' },
+  //   { id: 'y-row', label: 'Y-Row' },
+  //   { id: 'r-row', label: 'R-Row' },
+  //   { id: 'w-row', label: 'W-Row & N' },
+  // ];
 
   return (
     <div
